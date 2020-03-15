@@ -1,38 +1,164 @@
-.App {
+:root {
+  --mainBlue: #2a2a72;
+  --lightBlue: #009ffd;
+  --mainWhite: #f3f3f3;
+  --mainDark: #232528;
+  --mainYellow: #ffa400;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* font-family: sans-serif; */
+  background: var(--mainWhite) !important;
+  color: var(--mainDark);
+}
+
+.text-title {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+.text-blue {
+  color: var(--mainBlue);
+  font-family: cursive;
+}
+.text-bright{
+  color: var(--lightBlue);
+}
+.text-slanted {
+  color: var(--mainBlue);
+}
+/* // cart navabar /// */
+.btn-cart {
+  text-transform: capitalize;
+  font-size: 1rem;
+  background: transparent;
+  border: 0.05rem solid var(--lightBlue);
+  color: var(--mainWhite);
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  margin: 0.2rem 0.5rem 0.2rem 0;
+  transition: all 0.5s ease-in-out;
+}
+.btn-cart:hover {
+  background: var(--lightBlue);
+}
+
+.nav-link {
+ color: var(--mainWhite) !important;
+ font-size: 1rem;
+
+}
+
+/* cart page */
+.btn-black {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color: var(--mainDark);
+  border-radius: 0 !important;
+  border: 0.1rem solid var(--mainDark) !important;
+}
+
+.btn-black:hover {
+  background: var(--mainDark) !important;
+  color: var(--mainWhite) !important;
+}
+
+.cart-icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--mainYellow);
+}
+
+.logo-img {
+  width: 40px;
+}
+
+.header {
+  background-color: #009ffd;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.hero-image {
+  background-image: url(../src/landing.jpg);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-transform: capitalize;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero-text p {
+  letter-spacing: 2px;
+  
+}
+.landing-btn {
+  background-color: #f3f3f3 !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.about {
+  /* background-image: linear-gradient(-90deg, rgb(17, 0, 255), rgb(11, 189, 202)); */
+  background-color: #55b9f3;
+  height: 50vh;
+}
+
+.container-neu {
+  padding-top: 60px ;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+}
+.neu {
+  height: 200px;
+  width: 200px;
+  border-radius: 50px;
+  background: #55b9f3;
+  box-shadow:  20px 20px 60px #489dcf, 
+               -20px -20px 60px #62d5ff;
+}
+
+.neu h4 {
+  text-align: center;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  display: flex;
+  flex-direction: column;
+  margin-top: 40%;
+  left: 50%;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.about-text {
+  background-color: #5592b8;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about-text h3 {
+  text-decoration: underline;
 }
