@@ -109,7 +109,7 @@ body {
   transform: translate(-50%, -50%);
   color: white;
   text-transform: capitalize;
-  
+  font-weight: bolder;
 }
 
 .hero-text p {

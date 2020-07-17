@@ -99,6 +99,18 @@ export const storeProducts = [
     inCart: false,
     count: 0,
     total: 0
+  },
+  {
+    id: 9,
+    title: "Mechenical Gaming Keyboard",
+    img: "img/product-9.jpg",
+    price: 39,
+    company: "rapoo",
+    info:
+      "Mechenical gaming keyboard by rapoo with RGB lighting effects. Antighosting keys with N-key roll over. Blue mechenical switches. Splash proof design. Bsest keyboard for gamers. also rgb lighting are adjustable as per users need.",
+    inCart: false,
+    count: 0,
+    total: 0
   }
 ];
 

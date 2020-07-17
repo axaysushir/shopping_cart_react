@@ -8,8 +8,8 @@ export default class Homepage extends Component {
       <section id="banner" className="hero">
         <div className='hero-image'>
             <div className="hero-text">
-            <h1 className='display-4'>My awesome website</h1>
-            <p className='lead'>I am developer</p>
+            <h1 className='display-4'>Shop your favorite Gadgets</h1>
+            <p className='lead'>A great place to buy.</p>
             <button className='btn btn-rounded landing-btn'>
                 <Link to='/products'>Go to products</Link>
             </button>
