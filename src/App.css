@@ -156,9 +156,17 @@ body {
 }
 
 .about-text {
-  background-color: #5592b8;
+  /* background-color: #5592b8; */
+  background-color: var(--mainDark);
   color: white;
 }
-.about-text h3 {
+.about-text h3 { 
   text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  li {
+    margin-top: -20px;
+    padding: 3px 0 0 0;
+  }
 }

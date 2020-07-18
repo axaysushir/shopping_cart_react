@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
-import logo from '../logo.svg';
+import logo from '../icons8-mixer-logo.svg';
 
 
 export default class Navbar extends Component {
     render() {
         return (
-            <nav className='navbar navbar-expand-sm bg-primary navbar-dark px-sm-5'>
+            <nav className='navbar navbar-expand-sm bg-dark navbar-dark px-sm-5'>
                 <Link to='/' >
                     <img src={logo} alt="store" className='navbar-brand logo-img'/>
                 </Link>
